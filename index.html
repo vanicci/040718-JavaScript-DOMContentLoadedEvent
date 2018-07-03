@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript + DOM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="page-banner">
+				<h1 class="title">Shopping List</h1>
+				<p>Get it done today</p>
+			</div>
+			<form id="search-items">
+				<input type="text" placeholder="Search an item...">
+			</form>
+			<form id="add-item">
+				<input type="checkbox" id="hide"/>
+				<label fod="hide">Hide all items</label>
+				<input type="text" placeholder="Add an item...">
+				<button>Add</button>
+			</form>
+		</header>
+		<div id="item-list">
+			<h2 class="title">Items to Get</h2>
+			<ul>
+				<li>
+					<span class="name">Notebook</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Jello</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Spinach</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Rice</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Birthday Cake</span>
+					<span class="delete">delete</span>
+				</li>
+				<li>
+					<span class="name">Candles</span>
+					<span class="delete">delete</span>
+				</li>
+			</ul>
+			<div id="tabbed-content">
+				<ul class="tabs">
+					<li data-target="#about" class="active">About</li>
+					<li data-target="#contact">Contact</li>
+				</ul>
+				<div class="panel active" id="about">
+					<p>Content for about tab...</p>
+					<p>Lorem ipsum dolor sit amet......</p>
+				</div>
+				<div class="panel" id="contact">
+					<p>Content for contact tab...</p>
+					<p>Lorem ipsum dolor sit amet......</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
